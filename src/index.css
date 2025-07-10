@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Toast Styling */
+.Toastify__toast-container {
+  width: auto;
+  max-width: 400px;
+}
+
+.Toastify__toast {
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  padding: 12px 16px;
+  min-height: auto;
+}
+
+.Toastify__toast--success {
+  background-color: #10B981;
+  color: white;
+}
+
+.Toastify__toast--error {
+  background-color: #EF4444;
+  color: white;
+}
+
+.Toastify__toast--info {
+  background-color: #3B82F6;
+  color: white;
+}
+
+.Toastify__toast--warning {
+  background-color: #F59E0B;
+  color: white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007AFF;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056CC;
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus styles */
+button:focus,
+a:focus {
+  outline: 2px solid #007AFF;
+  outline-offset: 2px;
+}
+
+/* Animation utilities */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #007AFF 0%, #FF6F00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Button hover effects */
+.btn-hover {
+  transition: all 0.2s ease;
+}
+
+.btn-hover:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Sticky header backdrop */
+.header-backdrop {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Section padding */
+.section-padding {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+/* Hero section specific styles */
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.05) 0%, rgba(255, 111, 0, 0.05) 100%);
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Module card styles */
+.module-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 100%);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Pricing card styles */
+.pricing-card {
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.02) 0%, rgba(255, 111, 0, 0.02) 100%);
+  border: 2px solid rgba(0, 122, 255, 0.1);
+}
+
+/* Check icon styles */
+.check-icon {
+  color: #10B981;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+/* Navigation active state */
+.nav-active {
+  color: #007AFF;
+  font-weight: 600;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* CTA button gradient */
+.cta-gradient {
+  background: linear-gradient(135deg, #007AFF 0%, #0056CC 100%);
+  box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+}
+
+.cta-gradient:hover {
+  background: linear-gradient(135deg, #0056CC 0%, #003F99 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 122, 255, 0.4);
+}
+
+/* Secondary button styles */
+.btn-secondary {
+  background: linear-gradient(135deg, #FF6F00 0%, #E65100 100%);
+  box-shadow: 0 4px 15px rgba(255, 111, 0, 0.3);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #E65100 0%, #CC4A00 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 111, 0, 0.4);
+}
