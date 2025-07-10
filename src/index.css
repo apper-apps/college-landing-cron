@@ -65,12 +65,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #007AFF;
+  background: #5C27FE;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0056CC;
+  background: #4318D6;
 }
 
 /* Smooth transitions */
@@ -81,7 +81,7 @@ html {
 /* Focus styles */
 button:focus,
 a:focus {
-  outline: 2px solid #007AFF;
+  outline: 2px solid #5C27FE;
   outline-offset: 2px;
 }
 
@@ -103,7 +103,7 @@ a:focus {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #007AFF 0%, #FF6F00 100%);
+  background: linear-gradient(135deg, #5C27FE 0%, #00E0FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -116,7 +116,7 @@ a:focus {
 
 .btn-hover:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(92, 39, 254, 0.3);
 }
 
 /* Card hover effects */
@@ -149,7 +149,7 @@ a:focus {
 
 /* Hero section specific styles */
 .hero-gradient {
-  background: linear-gradient(135deg, rgba(0, 122, 255, 0.05) 0%, rgba(255, 111, 0, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(92, 39, 254, 0.05) 0%, rgba(0, 224, 255, 0.05) 100%);
 }
 
 /* Testimonial card styles */
@@ -167,8 +167,8 @@ a:focus {
 
 /* Pricing card styles */
 .pricing-card {
-  background: linear-gradient(135deg, rgba(0, 122, 255, 0.02) 0%, rgba(255, 111, 0, 0.02) 100%);
-  border: 2px solid rgba(0, 122, 255, 0.1);
+  background: linear-gradient(135deg, rgba(92, 39, 254, 0.02) 0%, rgba(0, 224, 255, 0.02) 100%);
+  border: 2px solid rgba(92, 39, 254, 0.1);
 }
 
 /* Check icon styles */
@@ -181,7 +181,7 @@ a:focus {
 
 /* Navigation active state */
 .nav-active {
-  color: #007AFF;
+  color: #5C27FE;
   font-weight: 600;
 }
 
@@ -194,24 +194,24 @@ a:focus {
 
 /* CTA button gradient */
 .cta-gradient {
-  background: linear-gradient(135deg, #007AFF 0%, #0056CC 100%);
-  box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+  background: linear-gradient(135deg, #5C27FE 0%, #4318D6 100%);
+  box-shadow: 0 4px 15px rgba(92, 39, 254, 0.3);
 }
 
 .cta-gradient:hover {
-  background: linear-gradient(135deg, #0056CC 0%, #003F99 100%);
+  background: linear-gradient(135deg, #4318D6 0%, #2D0DB8 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 122, 255, 0.4);
+  box-shadow: 0 6px 20px rgba(92, 39, 254, 0.4);
 }
 
 /* Secondary button styles */
 .btn-secondary {
-  background: linear-gradient(135deg, #FF6F00 0%, #E65100 100%);
-  box-shadow: 0 4px 15px rgba(255, 111, 0, 0.3);
+  background: linear-gradient(135deg, #00E0FF 0%, #00B4CC 100%);
+  box-shadow: 0 4px 15px rgba(0, 224, 255, 0.3);
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(135deg, #E65100 0%, #CC4A00 100%);
+  background: linear-gradient(135deg, #00B4CC 0%, #008A99 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 111, 0, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 224, 255, 0.4);
 }

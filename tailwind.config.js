@@ -9,10 +9,10 @@ export default {
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
       },
-      colors: {
-        primary: '#007AFF',
-        secondary: '#FF6F00',
-        accent: '#007AFF',
+colors: {
+        primary: '#5C27FE',
+        secondary: '#00E0FF',
+        accent: '#5C27FE',
         surface: '#FFFFFF',
         background: '#FFFFFF',
         dark: '#000000',
